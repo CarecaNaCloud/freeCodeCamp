@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="uft-8" />
+        <title>freeCodeCamp - Formulário De Pesquisa</title>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1 id="title"></h1>
+        <p id="description"></p>
+        <form id="survey-form">
+            <label id="name-label" for="name">
+                <input id="name" type="text" value="name" placeholder="Jeremy Smith" required />
+            </label>
+            <label id="email-label" for="email">
+                <input id="email" type="email" value="email" size="20" placeholder="youremail@gmail.com" />  <!--verify the validation for email, for the number in the next field and if can for the form too-->
+            </label>
+            <label id="number-label" for="number">
+                <input id="number" type="number" min="16" max="150" placeholder="Age"/>
+            </label>
+            <input type="radio" name="genre" value="man" />
+            <input type="radio" name="genre" value="human" />
+            <input type="radio" name="genre" value="lgbtqia+" />
+            <select id="dropdown" name="lgbtqia+">
+                <option></option>
+                <option></option>
+            </select>
+            <input type="checkbox" name="signature" value="free[]" />
+            <input type="checkbox" name="signature" value="basic[]" />
+            <input type="checkbox" name="signature" value="premium[]" />
+            <textarea></textarea>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </body>
+</html>>
