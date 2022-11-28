@@ -1,36 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="uft-8" />
-        <title>freeCodeCamp - Formulário De Pesquisa</title>
+        <title>plantedLife - what's the best plant for you </title>
         <meta name="viewport" content="width=device-width, inital-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
     </head>
+
     <body>
-        <h1 id="title"></h1>
-        <p id="description"></p>
+        <h1 id="title">plantLife - What will be the plant for 2023?</h1>
+        <p id="description">Are you choose inside or outside, Monstera or Maranta? Tell us what are your changes...</p>
+
         <form id="survey-form">
-            <label id="name-label" for="name">
-                <input id="name" type="text" value="name" placeholder="Jeremy Smith" required />
-            </label>
-            <label id="email-label" for="email">
-                <input id="email" type="email" value="email" size="20" placeholder="youremail@gmail.com" />  <!--verify the validation for email, for the number in the next field and if can for the form too-->
-            </label>
-            <label id="number-label" for="number">
-                <input id="number" type="number" min="16" max="150" placeholder="Age"/>
-            </label>
-            <input type="radio" name="genre" value="man" />
-            <input type="radio" name="genre" value="human" />
-            <input type="radio" name="genre" value="lgbtqia+" />
-            <select id="dropdown" name="lgbtqia+">
-                <option></option>
-                <option></option>
-            </select>
-            <input type="checkbox" name="signature" value="free[]" />
-            <input type="checkbox" name="signature" value="basic[]" />
-            <input type="checkbox" name="signature" value="premium[]" />
-            <textarea></textarea>
+            
+            <fieldset>
+                <legend>A bit about you</legend>
+
+                    <label id="name-label" for="name">Name
+                        <input id="name" type="text" placeholder="Jeremy Smith" required />
+                    </label>
+                    
+                    <label id="email-label" for="email">Email
+                        <input id="email" type="email" size="20" placeholder="youremail@gmail.com" required/>  <!--verify the validation for the form-->
+                    </label>
+                    
+                    <label id="number-label" for="number" required>Age
+                        <input id="number" type="number" min="16" max="150" placeholder="Age"/>
+                    </label>
+                    
+                    <label for="dropdown">Genre 
+                        <!--The for attribute have dropdown value because this is an grade project, and is an requirement that the select element have an id="dropdown", but freeCodeCamp don`t specified that field to be a genre option, the element fill is student choice-->
+                        <select id="dropdown" name="genre">
+                            <option value="men">Men</option>
+                            <option value="women">Women</option>
+                            <option value="lesbian">Lesbian</option>
+                            <option value="gay">Gay</option>
+                            <option value="bisex">Bisex</option>
+                            <option value="transvestite">Transverstite</option>
+                            <option value="transgender">Trangender</option>
+                            <option value="queer">Queer</option>
+                            <option value="intersex">Intersex</option>
+                            <option value="asexual">Asexual</option>
+                            <option value="aromantic">Aromantic</option>
+                            <option value="plus">+</option>
+                        </select>
+                    </label>
+            </fieldset>
+            
+           <fieldset>
+                <legend>Plants</legend>
+
+                    <label for="indoor">Indoor
+                        <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" />
+                    </label>
+
+                    <label for="outdoor">
+                        <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor" /> Outdoor
+                    </label>
+                    
+                    <label for="sansevieira">
+                        <input id="sansevieira" type="checkbox" name="plant[]" value="sansevieira" /> Snake Plant
+                    </label>
+                    
+                    <label for="zamioculcas">
+                        <input id="zamioculcas" type="checkbox" name="plant[]" value="zamioculcas" /> Zamioculcas
+                    </label>
+                    
+                    <label for="aloe-vera">
+                        <input id="aloe-vera" type="checkbox" name="plant[]" value="aloe-vera" /> Aloe-vera
+                    </label>
+                    
+                    <label for="marble-queen-photos">
+                        <input id="marble-queen-photos" type="checkbox" name="plant[]" value="marble-queen-photos" /> Devil's Ivy
+                    </label>
+                    
+                    <label for="fiddle-leaf-fig">
+                        <input id="fiddle-leaf-fig" type="checkbox" name="plant[]" value="fiddle-leaf-fig" /> Fiddle Leaf Fig
+                    </label>
+                    
+                    <label for="palm">
+                        <input id="palm" type="checkbox" name="plant[]" value="palm" /> Palm
+                    </label>
+                    
+                    <label for="monstera">
+                        <input id="monstera" type="checkbox" name="plant[]" value="monstera" /> Monstera
+                    </label>
+                    
+                    <label for="lavander">
+                        <input id="lavander" type="checkbox" name="plant[]" value="lavander" /> Lavander
+                    </label>
+                    
+                    <label for="english-ivy">english-ivy
+                        <input id="english-ivy" type="checkbox" name="plant[]" value="english-ivy" /> English-ivy
+                    </label>
+                    
+                    <label for="suculent">
+                        <input id="suculent" type="checkbox" name="plant[]" value="suculent" /> Suculent
+                    </label>
+                    
+                    <label for="dumb-cane">
+                        <input id="dumb-cane" type="checkbox" name="plant[]" value="dumb-cane" /> Dieffenbachia
+                    </label>
+                    
+                    <label for="spider-plant">
+                        <input id="spider-plant" type="checkbox" name="plant[]" value="spider-plant" /> Spider-plant
+                    </label>
+                    
+                    <label for="prayer">
+                        <input id="prayer" type="checkbox" name="plant[]" value="prayer" /> Prayer 
+                    </label>
+                    
+                    <label for="boston-fern">
+                        <input id="boston-fern" type="checkbox" name="plant[]" value="boston-fern" /> Boston Fern
+                    </label>
+                    
+                    <label for="peperomia">
+                        <input id="peperomia" type="checkbox" name="plant[]" value="peperomia" /> Peperomia
+                    </label>
+                    
+                    <label for="spathiphyllum">
+                        <input id="spathiphyllum" type="checkbox" name="plant[]" value="spathiphyllum" /> Lily
+                    </label>
+                    
+                    <label for="birds-of-paradise">
+                        <input id="birds-of-paradise" type="checkbox" name="plant[]" value="birds-of-paradise" /> Birds Of Paradise
+                    </label>
+                    
+                    <textarea placeholder="Have other favorites, tell us what's that love"></textarea>
+           </fieldset>
+            
             <button id="submit" type="submit">Submit</button>
+        
         </form>
+    
     </body>
-</html>>
+</html>
