@@ -5,7 +5,8 @@ git commit -m "mensagem no pacote": envia os arquivos empacotados para o reposit
 git log: apresenta o histórico de commits do repositório,
 git show: apresenta as alteraçãoes feitas nos arquivos commitados,
 git clone: clona um repositorio no Pc
-git remote -v: show de origin of the repositorie
+git remote -v: show de origin of the repositoriegit
+git push origin main: push local repository(pc) to remote repository(GitHub)
 git fetch:
 git pull:
 
